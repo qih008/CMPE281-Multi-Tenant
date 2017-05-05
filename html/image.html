@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CMPE281 Multi-Tenant Page</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/cmpe281.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CMPE281 Multi-Tenant</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li> 
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qing <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Han Chen</a></li>
+                <li><a href="#">Shuzhong Chen</a></li>
+                <li><a href="#">Jiarui Hu</a></li>
+                <li><a href="#">Qing Huang</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      
+        <img src = "../map.jpg" style="position:absolute; top:100px; left:50px">
+        
+        <div style="position:absolute; top:100px; left:900px">
+          <form class="form-grade">
+            <br>
+            <label for="inputPoint">Grade</label>
+            <input type="number" id="inputPoint" class="form-control" placeholder="0~10 points">
+            <br>
+            <label class="radio-inline">
+            <input type="radio" name="radio" class="form-check">Complete</label>
+            <label class="radio-inline">
+            <input type="radio" name="radio" class="form-check">Not Complete</label>
+            <br><br>
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="10" id="comment"></textarea>
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+          </form>
+        </div>
+
+    </div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
