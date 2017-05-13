@@ -42,7 +42,10 @@ shell_exec('mv /var/www/html/uploads/'.$path_name.' /var/www/html/uploads/input'
 //echo "<pre>shell_exec('ls -lart') </pre>"
 //shell_exec('cp /var/www/html/uploads/cmpe202_upload/java/* /var/www/html');
 shell_exec('/var/www/html/umlparser /var/www/html/uploads/input output.png');
+//shell_exec('java -cp .:/var/www/html umlparser /var/www/html/uploads/input output.png');
+//shell_exec('java -cp .:/var/www/html umlparser /var/www/html/uploads/input output.png');
 
+header('Location: http://loadtest-627992424.us-west-2.elb.amazonaws.com/Jiarui_Hu/html/upload.html')
 ?>
 
 <img src="./output.png">
